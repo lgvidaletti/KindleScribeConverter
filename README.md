@@ -112,7 +112,7 @@ making the most of a big, cheap, high-DPI screen.
   step of Workflow 2: <https://www.amazon.com/kindle-dbs/fd_kcp>
 - **Calibre** (free) + the **KFX Output** plugin — only needed to convert
   `.kpf` → `.kfx` in Workflow 2: <https://calibre-ebook.com/download> ·
-  plugin: <https://www.mobileread.com/forums/showthread.php?t=272290>
+  plugin: <https://www.mobileread.com/forums/showthread.php?t=272407>
 
 ## Installation
 
