@@ -93,6 +93,11 @@ making the most of a big, cheap, high-DPI screen.
   <https://www.ghostscript.com/releases/gsdnld.html>
 - **.NET Desktop Runtime** for Windows (WinForms dependency):
   <https://dotnet.microsoft.com/download/dotnet>
+- **Kindle Create** (free, from Amazon) — only needed for the final `.kpf`
+  step of Workflow 2: <https://www.amazon.com/kindle-dbs/fd_kcp>
+- **Calibre** (free) + the **KFX Output** plugin — only needed to convert
+  `.kpf` → `.kfx` in Workflow 2: <https://calibre-ebook.com/download> ·
+  plugin: <https://www.mobileread.com/forums/showthread.php?t=272290>
 
 ## Installation
 
@@ -112,21 +117,58 @@ powershell -ExecutionPolicy Bypass -File .\KindleScribeConverter_v1_24_3.ps1
 
 ## Usage
 
-### Workflow 1 — Folder with chapters (recommended for personal reading)
+KSC has two output layouts — choose the one that matches **how you will
+finish the manga**:
+
+- **With Chapters** → `output\` keeps your chapter/volume folder structure —
+  use this when you will finish the book in **KCC (Kindle Comic Converter)**.
+- **Kindle Create** → `output_kc\` flattens everything into sequential
+  numbers — use this when you will finish the book in **Kindle Create**
+  (`.kpf`) and convert it to KFX with Calibre (`.kfx`).
+
+### Workflow 1 — With Chapters → finish in KCC (Kindle Comic Converter)
 
 1. Click **Folder...** and select the root folder containing your manga images
    (`.jpg` / `.png`, any subfolder structure).
 2. *(Optional)* Click **Configure Spreads** to merge double pages.
 3. Adjust parameters if needed (defaults work well).
 4. Click **PROCESS IMAGES** → choose **With Chapters**.
-5. Output goes to `output\` preserving your chapter subfolders.
+5. Output goes to `output\` preserving your chapter/volume subfolders —
+   import that folder into **Kindle Comic Converter (KCC)** to produce the
+   final file for your Scribe.
 
-### Workflow 2 — Kindle Create (final file)
+> Only choose **With Chapters** if you are finishing in KCC. For the Kindle
+> Create flow (`.kpf` → `.kfx`) use Workflow 2 instead.
 
-Same as above, but choose **Kindle Create** at the end. All images are copied
-into a single `output_kc\` folder with sequential numbering
-(`0001.jpg`, `0002.jpg`, ...) — the exact format **Kindle Create** reads
-correctly. Then just import that folder into Kindle Create and publish.
+### Workflow 2 — Kindle Create + Calibre (final `.kfx`, official or pirated manga)
+
+All images are copied into a single `output_kc\` folder with sequential
+numbering (`0001.jpg`, `0002.jpg`, ...) — the exact format **Kindle Create**
+reads correctly. Finish the book with Kindle Create + the **KFX Output**
+plugin of Calibre:
+
+**Official manga (e.g. Humble Bundle EPUBs):**
+
+1. From the EPUB, extract the `image` folder containing the manga images.
+2. Open that folder in KSC and make the adjustments you want.
+3. Click **PROCESS IMAGES** → choose **Kindle Create**.
+4. Open the KSC `output_kc\` folder in **Kindle Create** and create a `.kpf`
+   file (you can include a table of contents).
+5. Run the **KFX Output** plugin in **Calibre** to convert the `.kpf` to KFX.
+6. Rename the file (e.g. `manga.kfx`) and send it to your **Kindle Scribe**.
+
+**Pirated/scanned manga:**
+
+1. Open your manga folder directly in KSC and make the adjustments you want.
+2. Click **PROCESS IMAGES** → choose **Kindle Create**.
+3. Open the KSC `output_kc\` folder in **Kindle Create** and create a `.kpf`
+   file (you can include a table of contents).
+4. Run the **KFX Output** plugin in **Calibre** to convert the `.kpf` to KFX.
+5. Rename the file and send it to your **Kindle Scribe**.
+
+> Tip: the **With Chapters** export already keeps chapter organization by
+> volume folders — so if you prefer finishing in **KCC** instead of the
+> Kindle Create flow, use Workflow 1.
 
 ### Workflow 3 — PDF import (two modes)
 
