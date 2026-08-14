@@ -1,3 +1,5 @@
+<img width="600" height="126" alt="KSC_ID_LOGO_SMALL_FINAL_NO_BG" src="https://github.com/user-attachments/assets/3c3b9a13-c959-48f3-857d-9854573c787d" />
+
 # Kindle Scribe Converter
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
