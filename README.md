@@ -169,7 +169,7 @@ plugin of Calibre:
 3. Click **PROCESS IMAGES** → choose **Kindle Create**.
 4. Open the KSC `output_kc\` folder in **Kindle Create** and create a `.kpf`
    file (you can include a table of contents).
-5. Run the **KFX Output** plugin in **Calibre** to convert the `.kpf` to KFX.
+5. Run the **KFX Output** inside the manga folder. The plugin must already be installed in **Calibre** to convert `.kpf` to KFX.
 6. Rename the file (e.g. `manga.kfx`) and send it to your **Kindle Scribe**.
 
 **Pirated/scanned manga:**
@@ -178,7 +178,7 @@ plugin of Calibre:
 2. Click **PROCESS IMAGES** → choose **Kindle Create**.
 3. Open the KSC `output_kc\` folder in **Kindle Create** and create a `.kpf`
    file (you can include a table of contents).
-4. Run the **KFX Output** plugin in **Calibre** to convert the `.kpf` to KFX.
+4. Run the **KFX Output** inside the manga folder. The plugin must already be installed in **Calibre** to convert `.kpf` to KFX.
 5. Rename the file and send it to your **Kindle Scribe**.
 
 > Tip: the **With Chapters** export already keeps chapter organization by
