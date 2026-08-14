@@ -1,5 +1,3 @@
-<img width="600" height="126" alt="KSC_ID_LOGO_SMALL_FINAL_NO_BG" src="https://github.com/user-attachments/assets/3c3b9a13-c959-48f3-857d-9854573c787d" />
-
 # Kindle Scribe Converter
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
@@ -245,6 +243,11 @@ complete changelog and background-detection/processing details.
   and restart.
 - **.exe shows errors and closes** — make sure you're on v1.24.3 (this
   version fixed the PS2EXE detection).
+- **Compiled `.exe` crashes when importing PDFs** — PDF extraction relies on
+  PowerShell 7 thread jobs (`Start-ThreadJob` / `ForEach-Object -Parallel`),
+  which can be unreliable inside a classic PS2EXE build. For full PDF
+  support, run the `.ps1` with `pwsh -STA -File` — or compile the `.exe`
+  with a PowerShell 7 runtime ([PS2EXE](https://github.com/MScholtes/PS2EXE)).
 - **Black/white margins appear where they shouldn't** — Fuzz is above 3%.
 
 ---
