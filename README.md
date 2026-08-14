@@ -7,7 +7,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/lgvidaletti/KindleScribeConverter)
 ![GitHub release](https://img.shields.io/github/v/release/lgvidaletti/KindleScribeConverter)
 
-A PowerShell + ImageMagick tool that prepares manga for the **Kindle Scribe**:
+A PowerShell + ImageMagick tool that prepares manga for the original **Kindle Scribe (2022/2024)** model:
 resizes every page to the exact screen resolution (300 DPI, 2480×1860), cleans
 up the image (grayscale, contrast, sharpening), merges double-page spreads and
 outputs sequentially numbered JPGs ready for **Kindle Create**.
