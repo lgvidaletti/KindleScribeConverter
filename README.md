@@ -1,5 +1,12 @@
 # Kindle Scribe Converter
 
+![License](https://img.shields.io/badge/license-MIT-blue)
+![PowerShell](https://img.shields.io/badge/PowerShell-7%2B-5391FE)
+![Platform](https://img.shields.io/badge/platform-Windows-blue)
+![ImageMagick](https://img.shields.io/badge/ImageMagick-required-orange)
+![GitHub stars](https://img.shields.io/github/stars/lgvidaletti/KindleScribeConverter)
+![GitHub release](https://img.shields.io/github/v/release/lgvidaletti/KindleScribeConverter)
+
 A PowerShell + ImageMagick tool that prepares manga for the **Kindle Scribe**:
 resizes every page to the exact screen resolution (300 DPI, 2480×1860), cleans
 up the image (grayscale, contrast, sharpening), merges double-page spreads and
@@ -9,6 +16,14 @@ outputs sequentially numbered JPGs ready for **Kindle Create**.
 > Scribe's screen. If they are not, the Scribe scales them and you get blur.
 > This tool makes every page exactly 2480×1860 — and nothing else in my flow
 > did that the way I wanted.
+
+---
+
+## Screenshots
+
+![Kindle Scribe Converter UI](screenshot.png)
+
+*Main window with the spread-pairing popup (manga read right-to-left).*
 
 ---
 
@@ -231,6 +246,19 @@ complete changelog and background-detection/processing details.
 - **Black/white margins appear where they shouldn't** — Fuzz is above 3%.
 
 ---
+
+## Contributing
+
+Contributions are welcome — this is a hobby project built by one person who
+just wanted to read manga on a Scribe.
+
+- **Found a bug?** Open an issue with your version, OS and the log output.
+- **Have an idea?** Open a feature request.
+- **Want to code?** Fork, branch, send a PR. Keep new strings in English
+  (the script was fully translated in v1.24.3) and follow semantic
+  versioning (patch = bugfix, minor = feature).
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## License
 
