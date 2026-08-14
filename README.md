@@ -109,7 +109,7 @@ making the most of a big, cheap, high-DPI screen.
 - **.NET Desktop Runtime** for Windows (WinForms dependency):
   <https://dotnet.microsoft.com/download/dotnet>
 - **Kindle Create** (free, from Amazon) — only needed for the final `.kpf`
-  step of Workflow 2: <https://www.amazon.com/kindle-dbs/fd_kcp>
+  step of Workflow 2: <https://www.amazon.com.br/Kindle-Create/b?ie=UTF8&node=18765776011>
 - **Calibre** (free) + the **KFX Output** plugin — only needed to convert
   `.kpf` → `.kfx` in Workflow 2: <https://calibre-ebook.com/download> ·
   plugin: <https://www.mobileread.com/forums/showthread.php?t=272407>
